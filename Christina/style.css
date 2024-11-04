@@ -1,0 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: black;
+}
+canvas {
+  margin: auto;
+  display: block;
+}
+
+p {
+  text-align: center;
+font-family: "Handjet", sans-serif;
+  font-size: 30px;
+}
+  
+h1 {
+  text-align: center;
+font-family: "Handjet", sans-serif;
+  font-size: 50px;
+}
