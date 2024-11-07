@@ -26,8 +26,6 @@ ZapSplat
 
 */
 
-
-
 //background image
 let backgroundImg;
 
@@ -113,17 +111,10 @@ function setup() {
 
   console.log("Total Games: " + countTotal);
   console.log(yearData);
-
- 
-
   //font
   textFont(Font);
 
-
-
-
 }
-
 
 function draw() {
   
@@ -131,7 +122,6 @@ function draw() {
   background(220);
   imageMode(CENTER);
   image(backgroundImg, 550, 300, 1100, 600);
-
 
   //Buttons The Player Will Hover 
   //Locations will be determined how much games were made in that year.
@@ -145,7 +135,6 @@ function draw() {
     fill(31, 79, 209);
     ellipse(buttonSpots[i][0], buttonSpots[i][1], 55, 20);
   }
-
 
   //Where the information will show up
   let onSpot = null;
@@ -185,11 +174,8 @@ function draw() {
   }
   if (onSpot == null)
     boxReset();
-
-
   quest();
   gameKey();
-
 
   //world box reset
 }
@@ -226,7 +212,6 @@ function boxTest(year) {
     strokeWeight(3);
     fill(0);
     textSize(40);
-
 
     let world = 'World';
     let yearTest = year + " - ";
@@ -282,7 +267,6 @@ function quest() {
   }
 }
 
-
 stepInterval = 0;
 
 //footstep play
@@ -305,29 +289,6 @@ function playRandomSound() {
     }
   //}, 300);
 }
-
-/*
-// footstep stop
-function stopPlayingSound() {
-  isPlaying = false;
-  clearInterval(playInterval);
-  sounds.forEach(sound => sound.pause());
-  sounds.forEach(sound => (sound.currentTime = 0));
-}
-
-document.addEventListener('keydown', (event) => {
-  if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
-    playRandomSound();
-  }
-});
-
-document.addEventListener('keyup', (event) => {
-  if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
-    stopPlayingSound();
-  }
-});
-
-*/
 
 //player game control
 
@@ -353,7 +314,7 @@ function gameKey() {
   }
 
   let currentSprite = spriteDownImg;
-
+//keys
   if (keyIsDown(UP_ARROW) ||
   keyIsDown(DOWN_ARROW) ||
   keyIsDown(LEFT_ARROW) ||
